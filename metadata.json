@@ -1,0 +1,6 @@
+{
+  "name": "Sprightly Trade International",
+  "description": "Premier C&F Agency in Bangladesh. Expert customs clearing, freight forwarding, and B2B logistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
