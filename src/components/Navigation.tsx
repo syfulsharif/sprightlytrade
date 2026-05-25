@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { House } from "lucide-react";
 import { cn } from "../lib/utils";
 
 export function Navigation() {
@@ -13,7 +14,7 @@ export function Navigation() {
   }, []);
 
   const navLinks = [
-    { name: "About", href: "#about" },
+    { name: "Home", href: "#home", icon: House },
     { name: "Services", href: "#services" },
     { name: "Process", href: "#process" },
     { name: "Reviews", href: "#reviews" },
@@ -31,8 +32,8 @@ export function Navigation() {
         {/* Left Nav (Desktop) */}
         <div className="hidden lg:flex items-center gap-12 absolute left-6 md:left-12">
           {navLinks.slice(0, 2).map((link) => (
-            <a key={link.name} href={link.href} className="text-xs font-medium uppercase tracking-widest text-neutral-300 hover:text-white transition-colors">
-              {link.name}
+            <a key={link.name} href={link.href} className="text-xs font-medium uppercase tracking-widest text-neutral-300 hover:text-white transition-colors flex items-center gap-2">
+              {link.icon ? <link.icon className="w-3.5 h-3.5" /> : link.name}
             </a>
           ))}
         </div>
